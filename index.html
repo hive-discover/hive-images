@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Stock Images - Hive Discover</title>
+    <meta name="description" content="Get brilliant Stock Images directly from the HIVE Blockchain - From and For the Community">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Hive Discover - Images</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#upload-your-images">Upload your own images&nbsp;&nbsp;<i class="fa fa-user-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white bg-primary masthead" style="padding-bottom: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-12">
+                    <h1 style="font-size: 60px;"><strong>HIVE -&nbsp;</strong>Stock Images</h1>
+                    <hr class="star-light">
+                    <h5 style="margin-bottom: 20px;">Search Engine</h5>
+                    <div>
+                        <ul class="nav nav-tabs d-xl-flex justify-content-xl-center" role="tablist">
+                            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1" style="background: var(--dark);">Search by Topic</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2" style="background: var(--dark);">Find Similar - Upload</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-3" style="background: var(--dark);">Find Similar - URL</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" role="tabpanel" id="tab-1" style="margin-top: 15px;">
+                                <div class="row">
+                                    <div class="col"><input class="form-control-lg col-md-9" type="text" id="txt_search_topics" placeholder="Topics - Bird, Beach, Butterfly, Boat..."></div>
+                                </div><button class="btn btn-info" id="btn_search_topics" type="button" style="margin-top: 10px;">Find Images&nbsp;&nbsp;<i class="fa fa-search"></i></button>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-2">
+                                <p>Coming soon...<br></p>
+                            </div>
+                            <div class="tab-pane active" role="tabpanel" id="tab-3">
+                                <p>Coming soon...<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 style="padding-bottom: 15px;padding-top: 25px;">Do not forget to mention and reward your source!&nbsp;<a class="text-primary bg-secondary border rounded-pill" href="https://peakd.com/hive-118554/@hive-118554/about-stock-images-and-important-information-please-read-first" target="_blank" style="color: rgb(255,255,255);border-style: none;padding: 6px;">&nbsp; Lern more&nbsp;&nbsp;</a></h5>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">Search results</h2>
+            <hr class="star-dark mb-5">
+            <h5 class="text-uppercase text-center text-secondary" id="label-no-results">Nothing was found</h5>
+            <div class="row" id="container-search-results">
+                <div class="col-md-6 col-lg-4" style="display: none;"><a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="https://www.zdf.de/assets/bg-landscape-photography-award-110~1280x720?cb=1637152668127" loading="lazy">
+                    </a></div>
+            </div>
+            <div class="row" id="search-loading-spinner" style="display: none;">
+                <div class="col col-md-12">
+                    <div class="d-xl-flex justify-content-xl-center sf_H sf_blend sf_grid" style="width: 100%;">
+                        <p class="sf_bar" style="width: 100%;height: 50px;"></p>
+                    </div>
+                </div>
+            </div><button class="btn btn-primary btn-lg text-center" id="btn-load-more-images" type="button" style="width: 100%;display: none;">Load more Images</button>
+        </div>
+    </section>
+    <section class="text-white bg-primary mb-0" id="about">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">About the Project</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Every day on Hive authors are using stock images. I use them on occasion myself and when I add that source link as a thank you to the creator of that <br>image on the free stock photo sites I wish I could give them a percentage beneficiary from that post. Except they probably don't have an account on Hive, so I can't.<br></p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">Yet Hive has lots of talented artists and photographers. What if they<br>wanted to offer some of their work up for use by other Hivers for the&nbsp;<br>chance of a return of a percentage beneficiary every time someone used&nbsp;<br>that picture? We could then be supporting our own content creators and&nbsp;giving these artists an ongoing income stream for their efforts.<br></p>
+                </div>
+            </div><a class="btn btn-info btn-lg text-center d-xl-flex justify-content-xl-center align-items-xl-center text-center" role="button" target="_blank" href="https://peakd.com/c/hive-118554/created"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                    <path d="M14 13.9633H16V7.96331H10V9.96331H12.5858L7.25623 15.2929L8.67044 16.7071L14 11.3775V13.9633Z" fill="currentColor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23 19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19ZM19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21Z" fill="currentColor"></path>
+                </svg>&nbsp;Explore our Stock Image Community</a>
+        </div>
+    </section>
+    <hr>
+    <section class="text-white bg-primary mb-0" id="upload-your-images">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">Upload your own images</h2>
+            <hr class="star-light mb-5">
+            <h4 class="text-center" style="padding-bottom: 10px;">Everyone can and should be able to upload their own stock images. Therefore, this process is also very simple</h4>
+            <div class="row" style="padding-top: 5px;">
+                <div class="col text-justify col-md-4">
+                    <h5 class="text-center" style="padding-bottom: 5px;"><i class="material-icons" style="padding-bottom: 5px;">add_a_photo</i>&nbsp;Take your Shot</h5>
+                    <p class="text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-bottom: 5px;">Take a picture of your environment, your life, an event or just draw something yourself. Preferably from different perspectives and rotations, so that there is the perfect picture for everyone.</p>
+                </div>
+                <div class="col text-justify col-md-4">
+                    <h5 class="text-center" style="padding-bottom: 5px;"><i class="fas fa-pen-fancy"></i>&nbsp;Write about your Photos</h5>
+                    <p class="text-center">Then write something about all your pictures: What can you see? What are they? Where did they originate? - The more you write, the better we can find your pictures.<br></p>
+                </div>
+                <div class="col text-justify col-md-4">
+                    <h5 class="text-center" style="padding-bottom: 5px;"><i class="fas fa-share-square"></i>&nbsp;Publish your Post</h5>
+                    <p class="text-center">Take your favourite front-end and post the post with your beautiful images in the community "Stock Images" or tag it with "#hivestockimages".<br></p>
+                    <div class="row d-xl-flex justify-content-xl-center">
+                        <div class="col text-center col-md-4"><a class="text-center text-secondary" href="https://peakd.com" style="width: 100%;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-point">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                </svg>&nbsp;Peakd</a></div>
+                        <div class="col text-center col-md-4"><a class="text-center text-secondary" href="https://hive.blog/" style="width: 100%;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-point">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                </svg>&nbsp;Hive.blog</a></div>
+                        <div class="col text-center col-md-4"><a class="text-center text-secondary" href="https://ecency.com/" style="width: 100%;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-point">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                </svg>Ecency</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center footer">
+        <div class="container">
+            <div class="row d-xl-flex justify-content-xl-center">
+                <div class="col-md-4 mb-5 mb-lg-0" style="display: none;">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p>Christopher K<br>Germany</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0" style="display: none;">
+                    <h4 class="text-uppercase">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Hive Discover - Images</h4>
+                    <p class="lead mb-0"><span>Stock images by Hive artists for the use of Hivers, allowing us to reward them for their work. <br><br></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright ©&nbsp;Hive Discover 2021</small></div>
+    </div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center text-white d-block js-scroll-trigger rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="image-modal" style="background: var(--gray);overflow-x: auto;overflow-y: hidden;">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h1 class="text-uppercase text-primary mb-0" id="modal-title">Title</h1>
+                                <h4 class="text-secondary" id="modal-author" style="padding-top: 10px;">by @Author</h4>
+                                <hr class="star-dark mb-5">
+                                <p class="mb-5">Click on a picture to enlarge it and to get more information about it.</p>
+                                <div class="row" id="container-post-images"></div>
+                                <div id="modal-loader" class="sf_H sf_blend sf_grid">
+                                    <p class="sf_bar" style="height: 33px;margin-top: 20px;"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h1>Similar Images</h1>
+                    </div>
+                </div>
+                <p>Coming Soon</p>
+                <div class="modal-footer pb-5" style="display: none;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="image-expand" style="background: var(--dark);">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-xl-flex align-items-xl-center">
+                    <div class="bg-secondary float-left" style="padding: 10px;width: 100%;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12"><label class="bg-info border rounded-pill" style="padding-top: 12px;padding-bottom: 8px;padding-left: 15px;margin-bottom: 0;color: rgb(255,255,255);"><i class="fa fa-clipboard" style="padding-right: 10px;"></i>Image URL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></label><input class="form-control-lg" type="text" id="expand-image-label-url" style="margin-left: -23px;width: 80%;margin-bottom: 8px;" readonly=""></div>
+                                <div class="col">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" style="padding-top: 10px;padding-bottom: 10px;">
+                            <div class="row">
+                                <div class="col col-md-3">
+                                    <h4 style="color: #ffffff;">Author</h4><input type="text" id="exand-image-author" style="width: 100%;" readonly="">
+                                </div>
+                                <div class="col col-md-9">
+                                    <h4 style="color: #ffffff;">Permlink</h4><input type="text" id="exand-image-permlink" style="width: 100%;" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h5 style="color: rgb(255,255,255);">Do not forget to mention and reward your source!<br></h5>
+                    </div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div><img id="expand-image-url" style="max-height: 100%;max-width: 100%;background: var(--dark);">
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
