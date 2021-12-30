@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Stock Images - Hive Discover</title>
     <meta name="description" content="Get brilliant Stock Images directly from the HIVE Blockchain - From and For the Community">
+    <link rel="icon" type="image/jpeg" sizes="250x250" href="assets/img/Favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="250x250" href="assets/img/Favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/Logo-Modern.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/Logo-Modern.jpg">
+    <link rel="icon" type="image/gif" sizes="500x500" href="assets/img/Hive-Discover-Logo-Block.gif">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
@@ -18,11 +23,12 @@
 
 <body id="page-top">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Hive Discover - Images</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" href="#page-top"><img src="assets/img/HiveDiscoverLogo-IconOnly.png" style="width: 50px;">&nbsp;Hive Discover - Images</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#upload-your-images">Upload your own images&nbsp;&nbsp;<i class="fa fa-user-plus"></i></a></li>
+                <ul class="navbar-nav d-xl-flex ml-auto align-items-xl-center">
+                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About&nbsp;<i class="fas fa-info"></i></a></li>
+                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team&nbsp;<i class="fa fa-group"></i></a></li>
+                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#upload-your-images">Upload your images&nbsp;<i class="fa fa-user-plus"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -31,35 +37,62 @@
         <div class="container">
             <div class="row">
                 <div class="col col-md-12">
-                    <h1 style="font-size: 60px;"><strong>HIVE -&nbsp;</strong>Stock Images</h1>
+                    <h1><strong>HIVE -&nbsp;</strong>Stock Images</h1>
                     <hr class="star-light">
-                    <h5 style="margin-bottom: 20px;">Search Engine</h5>
+                    <h3 style="margin-bottom: 35px;">Search Engine</h3>
                     <div>
                         <ul class="nav nav-tabs d-xl-flex justify-content-xl-center" role="tablist">
-                            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1" style="background: var(--dark);">Search by Topic</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1" style="background: var(--dark);">Search by Topic</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2" style="background: var(--dark);">Find Similar - Upload</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-3" style="background: var(--dark);">Find Similar - URL</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3" style="background: var(--dark);">Find Similar - URL</a></li>
                         </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane" role="tabpanel" id="tab-1" style="margin-top: 15px;">
+                        <div class="tab-content" style="background: rgba(255,255,255,0.12);">
+                            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                <h3 style="padding-top: 35px;">Search by Topics</h3>
                                 <div class="row">
-                                    <div class="col"><input class="form-control-lg col-md-9" type="text" id="txt_search_topics" placeholder="Topics - Bird, Beach, Butterfly, Boat..."></div>
-                                </div><button class="btn btn-info" id="btn_search_topics" type="button" style="margin-top: 10px;">Find Images&nbsp;&nbsp;<i class="fa fa-search"></i></button>
+                                    <div class="col" style="margin-top: 30px;"><input class="form-control-lg col-md-9" type="text" id="txt_search_topics" placeholder="Topics - Bird, Beach, Butterfly, Boat..."></div>
+                                </div><button class="btn btn-info btn-lg" id="btn_search_topics" type="button" style="margin-top: 35px;margin-bottom: 30px;width: 40%;">Find Images&nbsp;&nbsp;<i class="fa fa-search"></i></button>
                             </div>
-                            <div class="tab-pane" role="tabpanel" id="tab-2">
-                                <p>Coming soon...<br></p>
-                            </div>
-                            <div class="tab-pane active" role="tabpanel" id="tab-3">
-                                <p>Coming soon...<br></p>
+                            <div class="tab-pane" role="tabpanel" id="tab-2"><div class="container py-5">
+
+    <h4>Upload Images to find similar Stock Photos</h4>
+
+
+    <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+
+            <!-- Upload image input-->
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose Image</label>
+                <div class="input-group-append">
+                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                </div>
+            </div>
+
+            <!-- Uploaded image area-->
+            <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+        </div>
+    </div>
+</div><button class="btn btn-info btn-lg" id="btn_search_uploaded" type="button" style="padding-top: 0;width: 40%;margin-top: -30px;margin-bottom: 30px;">Find Images&nbsp;&nbsp;<i class="fa fa-search"></i></button></div>
+                            <div class="tab-pane" role="tabpanel" id="tab-3">
+                                <h3 style="padding-top: 35px;">Find Similar by URL</h3>
+                                <div class="row">
+                                    <div class="col" style="margin-top: 30px;"><input class="form-control-lg col-md-9" type="text" id="txt_search_img_url" placeholder="Image URL"></div>
+                                </div>
+                                <div class="row" style="margin: auto;width: 80%;">
+                                    <div class="col image-area mt-4"><img id="img_search_url" class="img-fluid rounded shadow-sm mx-auto d-block" onload="getSimilarURLSearchAPIData()"></div>
+                                </div><button class="btn btn-info btn-lg" id="btn_search_img_url" type="button" style="margin-top: 35px;margin-bottom: 30px;width: 40%;">Find Images&nbsp;&nbsp;<i class="fa fa-search"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h5 style="padding-bottom: 15px;padding-top: 25px;">Do not forget to mention and reward your source!&nbsp;<a class="text-primary bg-secondary border rounded-pill" href="https://peakd.com/hive-118554/@hive-118554/about-stock-images-and-important-information-please-read-first" target="_blank" style="color: rgb(255,255,255);border-style: none;padding: 6px;">&nbsp; Lern more&nbsp;&nbsp;</a></h5>
+        <hr style="margin-top: 20px;margin-bottom: 20px;">
+        <h5 style="padding-bottom: 30px;padding-top: 25px;">Do not forget to mention and reward your source!&nbsp;<a class="text-primary bg-secondary border rounded-pill" href="https://peakd.com/hive-118554/@hive-118554/about-stock-images-and-important-information-please-read-first" target="_blank" style="color: rgb(255,255,255);border-style: none;padding: 6px;">&nbsp; Lern more&nbsp;&nbsp;</a></h5>
     </header>
-    <section id="portfolio" class="portfolio">
+    <section id="section-search-results" class="portfolio" style="display: none;">
         <div class="container">
             <h2 class="text-uppercase text-center text-secondary">Search results</h2>
             <hr class="star-dark mb-5">
@@ -80,6 +113,7 @@
             </div><button class="btn btn-primary btn-lg text-center" id="btn-load-more-images" type="button" style="width: 100%;display: none;">Load more Images</button>
         </div>
     </section>
+    <hr>
     <section class="text-white bg-primary mb-0" id="about">
         <div class="container">
             <h2 class="text-uppercase text-center text-white">About the Project</h2>
@@ -98,11 +132,62 @@
         </div>
     </section>
     <hr>
-    <section class="text-white bg-primary mb-0" id="upload-your-images">
+    <section id="team" class="team-boxed">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">The Team </h2>
+                <p class="text-center" style="display: none;">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row d-xl-flex justify-content-xl-center align-items-xl-center people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/minismallholding/avatar" loading="auto">
+                        <h3 class="name">@<strong>minismallholding</strong></h3>
+                        <p class="title">Community admin</p>
+                        <p class="description">Placeholder</p>
+                        <div class="social"><a href="https://peakd.com/@minismallholding" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/christopher2002/avatar" loading="auto">
+                        <h3 class="name">@christopher2002</h3>
+                        <p class="title">Backend Developer</p>
+                        <p class="description">Placeholder<br></p>
+                        <div class="social"><a href="https://peakd.com/@christopher2002" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a><a href="https://github.com/Christopher-06" target="_blank"><i class="fa fa-github"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/crosheille/avatar" loading="auto">
+                        <h3 class="name">@<strong>crosheille</strong></h3>
+                        <p class="title"><strong>COMMUNITY ADMIN</strong><br></p>
+                        <p class="description">Placeholder<br></p>
+                        <div class="social"><a href="https://peakd.com/@crosheille" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/kattycrochet/avatar" loading="auto">
+                        <h3 class="name">@kattycrochet</h3>
+                        <p class="title">Community MOD</p>
+                        <p class="description">Placeholder<br></p>
+                        <div class="social"><a href="https://peakd.com/@kattycrochet" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="assets/img/HiveDiscoverLogo-IconOnly.png" loading="auto">
+                        <h3 class="name">@action-chain</h3>
+                        <p class="title">System Admin</p>
+                        <p class="description">Placeholder<br></p>
+                        <div class="social"><a href="https://peakd.com/@action-chain" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a><a href="https://github.com/hive-discover/" target="_blank"><i class="fa fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="text-white bg-primary mb-0" id="upload-your-images" style="padding-top: 110px;padding-bottom: 120px;">
         <div class="container">
             <h2 class="text-uppercase text-center text-white">Upload your own images</h2>
             <hr class="star-light mb-5">
-            <h4 class="text-center" style="padding-bottom: 10px;">Everyone can and should be able to upload their own stock images. Therefore, this process is also very simple</h4>
+            <h4 class="text-center" style="padding-bottom: 30px;">Everyone can and should be able to upload their own stock images. Therefore, this process is also very simple</h4>
             <div class="row" style="padding-top: 5px;">
                 <div class="col text-justify col-md-4">
                     <h5 class="text-center" style="padding-bottom: 5px;"><i class="material-icons" style="padding-bottom: 5px;">add_a_photo</i>&nbsp;Take your Shot</h5>
@@ -136,28 +221,25 @@
     <footer class="text-center footer">
         <div class="container">
             <div class="row d-xl-flex justify-content-xl-center">
-                <div class="col-md-4 mb-5 mb-lg-0" style="display: none;">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p>Christopher K<br>Germany</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0" style="display: none;">
-                    <h4 class="text-uppercase">Around the Web</h4>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
+                <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-2">
+                    <ul class="list-inline d-xl-flex" style="width: 100%;">
+                        <li class="list-inline-item border rounded-pill" style="padding: 5px;width: 90%;"><a href="#modal-privacy-policy" data-target="#modal-privacy-policy" data-toggle="modal">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-md-6">
+                <div class="col col-md-8">
                     <h4 class="text-uppercase mb-4">Hive Discover - Images</h4>
                     <p class="lead mb-0"><span>Stock images by Hive artists for the use of Hivers, allowing us to reward them for their work. <br><br></span></p>
+                </div>
+                <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-2">
+                    <ul class="list-inline d-xl-flex" style="width: 100%;">
+                        <li class="list-inline-item border rounded-pill" style="padding: 5px;width: 90%;"><a href="#modal-disclaimer" data-target="#modal-disclaimer" data-toggle="modal">Disclaimer</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
     <div class="text-center text-white copyright py-4">
-        <div class="container"><small>Copyright ©&nbsp;Hive Discover 2021</small></div>
+        <div class="container"><small>Copyright ©&nbsp;Hive Discover 2022</small></div>
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center text-white d-block js-scroll-trigger rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="image-modal" style="background: var(--gray);overflow-x: auto;overflow-y: hidden;">
@@ -217,9 +299,56 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-something-went-wrong">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa fa-info-circle"></i>&nbsp;Something went wrong</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>An unknown error occurred while trying to connect to the server. We are sorry, but please try again later...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-privacy-policy">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center"><i class="fas fa-file-contract"></i>&nbsp;Privacy Policy</h1><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>1. Overview: Data protection<br> &nbsp; &nbsp; General Information<br><br> The following information provide a simple overview of what happens to&nbsp;your personal data when you visit this website. Personal data is any data that&nbsp;can be used to identify you personally. For detailed information about data&nbsp;protection, please refer to our privacy policy listed below this text.<br><br> &nbsp; &nbsp; Data acquisition on this website<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Who is responsible for data collection on this website?<br><br> The data processing on this website is carried out by the website&nbsp;operator. You can find the contact details of the website operator in the&nbsp;section "Information about the responsible authority" in this data&nbsp;protection declaration. &nbsp;<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; How do we collect your data?<br><br> On the one hand, your data is collected by you providing it to us. This can be, for example, data that you enter in a contact form. Other data is collected automatically or after your consent when you visit the website by our IT systems. This is mainly technical data (e. g. Internet browser, operating system or time of page view). This data is collected automatically as soon as you enter this website. In addition, data is permanently collected and analysed by the HIVE Blockchain. More information is available here: <a href="https://hive.io/">https://hive.io/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;What do we use your data for?<br><br> Some of the data is collected to ensure error-free provision of the website. Other data may be used to analyse your user behaviour or is required in the search and explore function. &nbsp;<br><br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;What rights do you have with regard to your data?<br><br> You have the right at any time to receive information free of charge about the origin, recipient and purpose of your stored personal data. You also have a right to request the correction or deletion of this data. If you have given your consent to data processing, you can revoke this consent at any time for the future. You <br>also have the right to request the restriction of the processing of your personal data under certain circumstances. Furthermore, you have the right to lodge a complaint with the competent supervisory authority. For this purpose, as well as for further questions about data protection,&nbsp; you can contact us at any time.<br><br><br> 2. Hosting and Content Delivery Networks (CDN)<br><br> &nbsp; &nbsp; External Hosting<br><br> This website is hosted by three external service providers (hosters). The personal data collected on this website is stored on&nbsp;the&nbsp;hoster's servers. This may include, but is not limited to, IP addresses, contact requests, meta and communication data, contractual data, contact data, names, website accesses and other data generated via&nbsp;a website. The hoster is used for the purpose of fulfilling contracts with our potential and existing customers (Art. 6 para. 1 lit. b DSGVO) and in the interest of a secure, fast and efficient provision of our online offer by a professional provider (Art. 6 para. 1 lit. f DSGVO). Our hoster will only process your data to the extent necessary to fulfil its service obligations and follow our instructions regarding this <br>data. We use the following hosters: <br><br> GitHub Inc., 88 Colin P Kelly Jr Street, CA 94107, San Francisco, USA<br><br> Contabo GmbH, Aschauer Straße 32a, 81549 Munich, Germany<br><br> Jsdelivr.com, more Information: <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net">https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net</a><br><br> <br><br> 3. General Information and required Information<br><br> &nbsp; &nbsp; Data protection<br><br> The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially&nbsp;and in accordance with the statutory data protection regulations and <br>this privacy policy. When you use this website, various personal data are collected. Personal data is data with which you can be personally identified. This privacy policy explains what data we collect and what <br>we use it for. It also explains how and for what purpose this is done. We would like to point out that data transmission on the Internet (e. g. when communicating by e-mail) can have security gaps. Complete <br>protection of data against access by third parties is not possible.<br><br> &nbsp; &nbsp;&nbsp;Information about the responsible authority<br><br> The responsible authority for the data processing on this website is: <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Christopher Kock<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Friedlandstraße 34<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;49744 Geeste<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Telephone: +49 (0) 160 93996561<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E-Mail:&nbsp;<a href="mailto:hive-discover@outlook.com">hive-discover@outlook.com</a> <br><br> The responsible authority is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data (e. g. names, e-mail addresses, etc.).<br><br> &nbsp; &nbsp; Storage duration<br><br> Unless a more specific storage duration has been specified within this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies. If you assert a justified request for deletion or revoke consent to data processing, your data will be deleted unless we have other legally <br>permissible reasons for storing your personal data (e. g. retention periods under tax or commercial law); in the latter case, deletion will take place after these reasons cease to apply.<br><br> &nbsp; &nbsp;&nbsp;Information about the data transfer to the USA<br><br> Among other things, tools from companies based in the USA are integrated on our website. If these tools are active, your personal data may be transferred to the US servers of the respective companies.&nbsp; We would like to point out that the USA is not a safe third country in the sense of EU data protection law. US companies are obliged to hand over personal data to security authorities without you as a data subject&nbsp;being able to take legal action against this. It can therefore not be ruled out that US authorities (e. g. intelligence services) process, evaluate and permanently store your data located on US servers for monitoring purposes. We have no influence on these processing activities.<br><br> &nbsp; &nbsp;&nbsp;Revocation of your consent to data processing<br><br> Many data processing operations are only possible with your express consent. You can revoke consent you have already given at any time. The legality of the data processing carried out until the revocation remains unaffected by the revocation.<br><br> &nbsp; &nbsp;&nbsp;Right to object to data collection and in special cases as well as to direct advertising (Art. 21 DSGVO)<br><br> IF THE DATA PROCESSING IS CARRIED OUT ON THE BASIS OF ART. 6 ABS. 1 LIT. E OR F DSGVO, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA AT ANY TIME FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH PROCESSING IS BASED CAN<br> BE FOUND IN THIS DATA PROTECTION DECLARATION. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR PERSONAL DATA CONCERNED UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, RIGHTS AND FREEDOMS, OR THE PROCESSING IS FOR THE PURPOSE OF ASSERTING, EXERCISING OR DEFENDING LEGAL CLAIMS (OBJECTION UNDER ARTICLE&nbsp;21(1) DSGVO). IF YOUR PERSONAL DATA ARE PROCESSED FOR THE PURPOSE OF DIRECT MARKETING, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR THE PURPOSE OF SUCH <br>MARKETING; THIS ALSO APPLIES TO PROFILING INSOFAR AS IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR THE PURPOSE OF DIRECT MARKETING (OBJECTION PURSUANT TO ARTICLE 21 (2) DSGVO).&nbsp; <br><br> &nbsp; &nbsp;&nbsp;Right of appeal at the supervisory authority<br><br> In the event of breaches of the GDPR, data subjects shall have a right of appeal to a supervisory authority, in particular in the Member State of their habitual residence, their place of work or the place of the alleged breach. The right of appeal is without prejudice to other administrative or judicial remedies.<br><br> &nbsp; &nbsp;&nbsp;Right of data portability<br><br> You have the right to have data that we process automatically on the basis of your consent or in fulfilment of a contract handed over to you or to a third party in a common, machine-readable format. If you request the direct transfer of the data to another controller,&nbsp; this will only be done insofar as it is technically feasible.<br><br> &nbsp; &nbsp;&nbsp;SSL- or rather TLS-Encryption<br><br> This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as orders or requests that you send to us as the site operator. You can recognize an encrypted connection by the fact that the address line of the browser changes from "http://" to "https://" and by the lock symbol in your browser line. If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties.<br><br> &nbsp; &nbsp;&nbsp;Right to information, deletion and correction<br><br> Within the framework of the applicable legal provisions, you have the right at any time to free information about your stored personal data, its origin and recipient and the purpose of data processing and, if necessary, a right to correction or deletion of this data. For this purpose, as well as for further questions about personal data, you can contact us at any time.<br><br> &nbsp; &nbsp;&nbsp;Right of limiting the data processing<br><br> You have the right to request the limit of the processing of your personal data. For this purpose, you can contact us at any time. The right to limit of processing exists in the following cases: If you dispute the accuracy of your personal data stored by us, we usually need time to verify this. For the duration of the review, you have the right to request the limit of the processing of your personal data. If the processing of your personal data happened/is happening unlawfully, you can request the limit of data processing instead of deletion. If we no longer need your personal data, but you need it to exercise, defend or assert legal claims, you have the right to request limit of the processing of your personal data instead of erasure. If you have lodged an objection pursuant to Art. 21 (1) DSGVO, a balancing of your&nbsp;and our interests must be carried out. As long as it has not yet been determined whose interests prevail, you have the right to request the limit of the processing of your personal data. If you have limited the processing of your personal data, this data - apart from its storage - may only be processed with your consent or for the assertion, exercise or defence of legal claims or for the protection of the rights of another natural or legal person or for reasons of an important public interest of the European Union or a Member State.<br><br> <br> 4. Data collection on this Website<br><br> &nbsp; &nbsp; Cookies<br><br> Our Internet pages use so-called "cookies". Cookies are small text files and do not cause any damage to your terminal&nbsp;device.&nbsp;They are stored either temporarily for the duration of a session (session cookies) or permanently (permanent cookies) on your end device. Session cookies are automatically deleted at the end of your visit. Permanent cookies remain stored on your terminal device until you delete them yourself or until they are automatically deleted by your web browser. In some cases, cookies from third-party companies may also be stored on your terminal device when you enter our site (third-party cookies). These enable us or you to use certain services of the third-party company (e. g. cookies for processing payment services). Cookies have various functions. Many cookies are technically necessary, as certain website functions would not work without them (e. g. the shopping cart function or the display of videos). Other cookies are used to evaluate user behaviour or display advertising. Cookies that are necessary to carry out the electronic communication process (necessary cookies) or to provide certain functions that you have requested (functional cookies, e. g. for the shopping cart function) or to optimize the website (e. g. cookies to measure the web audience) are stored based on Art. 6 (1) lit. f DSGVO, unless another legal basis is specified. The website operator has a legitimate interest in storing cookies for the technically error-free and optimized provision of its services. If consent to the storage of cookies has been requested, the storage of the cookies in question is based exclusively on this consent (Art. 6 para. 1 lit. a DSGVO); consent can be revoked at any time. You can set your browser so that you are informed about the setting of cookies and only allow cookies in individual cases, exclude the acceptance of cookies for certain cases or in general and activate the automatic deletion of cookies when closing the browser. If cookies are deactivated, the functionality of this website may be limited. Insofar as cookies are used by third-party companies or for analysis purposes, we will inform you separately about this within the framework of this data protection declaration and, if ecessary, request your consent.<br><br> &nbsp; &nbsp; Server-Log-Files<br><br> The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are: Browser type and browser version, operating system used, referrer URL, host name of the accessing computer, time of the server request, IP address. This data is not merged with other data sources. The collection of this data is based on Art. 6 para. 1 lit. f DSGVO. The website operator has a legitimate interest in the technically error-free presentation and optimization of its website -for this purpose, the server log files must be collected.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact form<br><br> If you send us inquiries via the contact form, your data from the inquiry form including the contact data you provided there will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent. The processing of this data is based on Art. 6 (1) lit. b DSGVO, if your request is related to the performance of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of the requests sent to us (Art. 6 (1) (f) DSGVO) or on your consent (Art. 6 (1) (a) DSGVO) if this was requested. The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e. g. after we have completed processing your request). Mandatory legal provisions - in particular, retention periods - remain unaffected.<br><br> &nbsp; &nbsp;&nbsp;Requests by E-Mail or Telephone<br><br> If you contact us by e-mail, telephone or fax, your inquiry including all resulting personal data (name, inquiry) will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent. The processing of this data is based on Art. 6 (1) lit. b DSGVO, if your request is related to the performance of a contract or is necessary for the implementation of pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of the requests sent to us (Art. 6 (1) (f) DSGVO) or on your consent (Art. 6 (1) (a) DSGVO) if this was requested. The data you send to us via contact requests will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e. g. after your request has been processed). Mandatory statutory provisions - in particular, statutory retention periods - remain unaffected.<br><br> &nbsp; &nbsp;&nbsp;HIVE-Blockchain<br><br> We obtain most of our data from the HIVE blockchain. This is a public blockchain, which is not maintained by us. You can find more information here: <a href="https://hive.io">https://hive.io</a>. We have no influence on their content and are not responsible for it. Since some of the data stored on them are personal data, we usually process them only with your consent. However, the search function of our website cannot always wait for this consent, so it may be that your personal data has already been processed once before your consent. The basis for this is the public interest in the search function (Article 6 (1) (e) DSGVO). Of course, we give you the opportunity to object to this automatic data processing. If you wish to do so, please contact us by <br>e-mail or telephone.<br> <br> <br> 5. Plugins and Tools<br><br> &nbsp; &nbsp;&nbsp;Google Web Fonts<br><br> This page uses so-called web fonts provided by Google for the uniform display of fonts. When you call up a page, your browser loads the required web fonts into its browser cache in order to display texts and fonts correctly.&nbsp;For this purpose, the browser you are using must connect to Google's servers. This enables Google to know that this website has been accessed via your IP address. The use of Google Web Fonts is based on <br>Art. 6 para. 1 lit. f DSGVO. The website operator has a legitimate interest in the uniform presentation of the typeface on its website. If a corresponding consent has been requested (e. g. consent to store cookies), the processing is based exclusively on Art. 6 (1) lit. A DSGVO; the consent can be revoked at any time. If your browser does not support web fonts, a standard font from your computer will be used. For more information on Google Web Fonts, please visit <a href="https://developers.google.com/fonts/faq">https://developers.google.com/fonts/faq</a> and see Google's privacy Policy:&nbsp;<a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a>. <br><br> &nbsp; &nbsp; Font Awesome<br><br> This site uses Font Awesome for uniform display of fonts and symbols. The provider is Fonticons, Inc., 6 Porter Road Apartment 3R, Cambridge, Massachusetts, USA. When you call up a page, your browser loads the required fonts into its browser cache in order to display texts, fonts and symbols correctly. For this purpose, the browser you use must connect to Font Awesome's servers. This enables Font Awesome to know that your IP address has been used to access this website. The use of Font Awesome is based on Art. 6 para. 1 lit. f DSGVO. We have a legitimate interest in the uniform presentation of the typeface on our website. If a corresponding consent has been requested (e. g. a consent to store cookies), the processing is carried out exclusively based on Art. 6Abs. 1 lit. a DSGVO; the consent can be revoked at any time. If your browser does not support Font Awesome, a default font will be used by your computer. You can find more <br>information about Font Awesome and in Font Awesome's privacy policy at: <a href="https://fontawesome.com/privacy">ttps://fontawesome.com/privacy</a>. <br><br></p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-disclaimer">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center"><i class="fas fa-external-link-alt"></i>&nbsp;Disclaimer</h1><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <h2>1. Disclaimer</h2>
+                    <p>As a service provider, we are responsible for our own content on these pages in accordance with the general laws pursuant to §7 Para.1 TMG. According to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored information or to investigate circumstances that indicate illegal activity. Obligations to remove <br>or block the use of information under the general laws remain unaffected. However, liability in this regard is only possible from the point in time at which a concrete infringement of the law becomes known. If we become aware of any such infringements, we will remove the relevant content immediately. Therefore, we ask you to report such information by e-mail. <br></p>
+                    <hr>
+                    <h2>2.&nbsp;Liability for links<br></h2>
+                    <p>Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the sites is always responsible for the content of the linked sites. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognizable at the time of linking.<br>However, a permanent control of the contents of the linked pages is not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements, we will remove such links immediately. Therefore, we ask you to report inappropriate or illegal links to us by e-mail.<br></p>
+                    <hr>
+                    <h2>3. Copyright</h2>
+                    <p>The contents and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of <br>the copyright law shall require the prior written consent of its respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.<br>Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any infringements, we will remove such content immediately.<br></p>
+                    <hr>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 
