@@ -79,9 +79,12 @@
                                 <h3 style="padding-top: 35px;">Find Similar by URL</h3>
                                 <div class="row">
                                     <div class="col" style="margin-top: 30px;"><input class="form-control-lg col-md-9" type="text" id="txt_search_img_url" placeholder="Image URL"></div>
+                                    <div class="col col-md-12">
+                                        <h3 id="search_img_error" style="padding-top: 25px;padding-bottom: 20px;display: none;">Attention: Cannot load Image</h3>
+                                    </div>
                                 </div>
                                 <div class="row" style="margin: auto;width: 80%;">
-                                    <div class="col image-area mt-4"><img id="img_search_url" class="img-fluid rounded shadow-sm mx-auto d-block" onload="getSimilarURLSearchAPIData()"></div>
+                                    <div class="col image-area mt-4"><img id="img_search_url" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
                                 </div><button class="btn btn-info btn-lg" id="btn_search_img_url" type="button" style="margin-top: 35px;margin-bottom: 30px;width: 40%;">Find Images&nbsp;&nbsp;<i class="fa fa-search"></i></button>
                             </div>
                         </div>
@@ -262,10 +265,9 @@
                         </div>
                         <hr>
                         <h1>Similar Images</h1>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
-                <p>Coming Soon</p>
-                <div class="modal-footer pb-5" style="display: none;"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
             </div>
         </div>
     </div>
