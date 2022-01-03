@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -28,7 +29,8 @@
                 <ul class="navbar-nav d-xl-flex ml-auto align-items-xl-center">
                     <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About&nbsp;<i class="fas fa-info"></i></a></li>
                     <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#team">Team&nbsp;<i class="fa fa-group"></i></a></li>
-                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#upload-your-images">Upload your images&nbsp;<i class="fa fa-user-plus"></i></a></li>
+                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#upload-your-images">Upload&nbsp;<i class="fa fa-user-plus"></i></a></li>
+                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#usage-modal" data-target="#usage-modal" data-toggle="modal">Usage&nbsp;<i class="icon ion-social-buffer"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -245,6 +247,36 @@
         <div class="container"><small>Copyright ©&nbsp;Hive Discover 2022</small></div>
     </div>
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center text-white d-block js-scroll-trigger rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="usage-modal" style="background: var(--gray);overflow-x: hidden;overflow-y: hidden;">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-center modal-title"><i class="icon ion-social-buffer"></i><strong>&nbsp;Who uses my pictures?</strong></h1><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body" style="overflow-x: hidden;">
+                    <div class="container text-center">
+                        <div class="row col-md-12" style="background: var(--teal);border-radius: 18px;margin: auto;">
+                            <div class="col col-md-1" style="padding: 0;">
+                                <h1 style="width: 100%;height: 100%;max-height: 100%;">@</h1>
+                            </div>
+                            <div class="col col-md-9" style="padding: 0;"><input class="form-control-lg col-md-12" type="text" id="txt_usage_username" placeholder="Username" style="padding: 0;max-width: 100%;max-height: 100%;height: 100%;background: rgba(255,255,255,0);border-width: 0px;"></div>
+                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-2"><button class="btn btn-primary btn-lg" id="btn-search-usage" type="button" style="width: 100%;background: rgba(0,0,0,0.06);border-width: 6px;color: rgb(0,0,0);"><i class="fa fa-search"></i>&nbsp;Search</button></div>
+                        </div>
+                        <hr class="star-dark mb-5">
+                        <div class="row" id="usage-nothing-was-found">
+                            <div class="col-lg-8 mx-auto">
+                                <h1>Nothing was found</h1>
+                            </div>
+                        </div>
+                        <div class="row" id="container-usage-posts"></div>
+                        <div id="usage-loader" class="sf_H sf_blend sf_grid" style="display: none;">
+                            <p class="sf_bar" style="height: 33px;margin-top: 20px;"></p>
+                        </div><button class="btn btn-primary" id="btn-usage-load-more" type="button" style="width: 80%;display: none;" onclick="showSomeUsagePosts()">Load more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="image-modal" style="background: var(--gray);overflow-x: auto;overflow-y: hidden;">
         <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
             <div class="modal-content">
