@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Stock Images - Hive Discover</title>
+    <meta name="twitter:title" content="Hive Discover - Images">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Get brilliant Stock Images directly from the HIVE Blockchain - From and For the Community">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/jpeg" sizes="250x250" href="assets/img/Favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="250x250" href="assets/img/Favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/Logo-Modern.jpg">
+    <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/Logo-Modern.jpg">
+    <link rel="icon" type="image/gif" sizes="500x500" href="assets/img/Hive-Discover-Logo-Block.gif">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="d-xl-flex justify-content-center align-items-center align-content-center justify-content-xl-center align-items-xl-center text-center"><i class="fa fa-star"></i>&nbsp;Enter Password:&nbsp;<input class="form-control-lg" type="password" id="txt_mod_passwd" placeholder="Password">&nbsp;<i class="fa fa-star"></i></h1>
+    </header>
+    <hr style="margin: 30px 0px;">
+    <div class="container" id="post-info-section">
+        <h2>View Post Information</h2>
+        <div class="row" name="inputs">
+            <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-3"><input class="bg-white border-dark" type="text" id="txt_viewinfo_author" placeholder="Author" style="width: 100%;" value=""></div>
+            <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-6"><input class="bg-white border-dark" type="text" id="txt_viewinfo_permlink" placeholder="Permlink" style="width: 100%;" value=""></div>
+            <div class="col d-xl-flex justify-content-xl-center"><button class="btn btn-primary" id="btn_viewinfo_clear" type="button" style="margin: 5px;" onclick="clearPostInfoForm();"><i class="fa fa-close"></i>&nbsp;Clear</button><button class="btn btn-primary" id="btn_viewinfo_search" type="button" style="margin: 5px;" onclick="onClickPostInfoSearch();"><i class="fa fa-search"></i>&nbsp;Search</button></div>
+        </div>
+        <div id="post-info-results-container" style="display: none;">
+            <hr>
+            <h3>&nbsp; &nbsp; &nbsp;Results</h3>
+            <div class="row" name="inputs">
+                <div class="col d-xl-flex justify-content-xl-center col-md-3">
+                    <h5>Author:&nbsp;</h5>
+                    <p id="label_post_info_author">Paragraph</p>
+                </div>
+                <div class="col d-xl-flex justify-content-xl-center col-md-6">
+                    <h5>Permlink:&nbsp;</h5>
+                    <p id="label_post_info_permlink">Paragraph</p>
+                </div>
+                <div class="col d-xl-flex justify-content-xl-center col-md-3">
+                    <h5>Tags:&nbsp;</h5>
+                    <p id="label_post_info_tags">Paragraph</p>
+                </div>
+            </div>
+            <h5 class="text-center">Images</h5>
+            <div class="row" id="post-info-result-images"></div>
+        </div>
+    </div>
+    <hr style="margin: 30px 0px;">
+    <div class="container" id="mute-post-section">
+        <h2>Mute a Post</h2>
+        <div class="row" name="inputs">
+            <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-3"><input class="bg-white border-dark" type="text" id="txt_mutepost_author" placeholder="Author" style="width: 100%;" value=""></div>
+            <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-6"><input class="bg-white border-dark" type="text" id="txt_mutepost_permlink" placeholder="Permlink" style="width: 100%;" value=""></div>
+            <div class="col d-xl-flex justify-content-xl-center"><button class="btn btn-primary" id="btn_mutepost_go" type="button" style="margin: 5px;width: 50%;" onclick="onClickMutePost();"><i class="fa fa-angle-double-left"></i>&nbsp;Go</button></div>
+        </div>
+        <div id="post-info-results-container-1" style="display: none;">
+            <hr>
+            <h3>&nbsp; &nbsp; &nbsp;Results</h3>
+            <div class="row" name="inputs">
+                <div class="col d-xl-flex justify-content-xl-center col-md-3">
+                    <h5>Author:&nbsp;</h5>
+                    <p id="label_post_info_author-1">Paragraph</p>
+                </div>
+                <div class="col d-xl-flex justify-content-xl-center col-md-6">
+                    <h5>Permlink:&nbsp;</h5>
+                    <p id="label_post_info_permlink-1">Paragraph</p>
+                </div>
+                <div class="col d-xl-flex justify-content-xl-center col-md-3">
+                    <h5>Tags:&nbsp;</h5>
+                    <p id="label_post_info_tags-1">Paragraph</p>
+                </div>
+            </div>
+            <h5 class="text-center">Images</h5>
+            <div class="row" id="post-info-result-images-1"></div>
+        </div>
+    </div>
+    <hr style="margin: 30px 0px;">
+    <div class="container" id="mute-list-section" style="background: var(--gray);">
+        <div class="row d-xl-flex justify-content-xl-center align-items-xl-center">
+            <div class="col-md-12 d-xl-flex justify-content-xl-center"><button class="btn btn-primary btn-lg" id="btn_load_mute_list" type="button" onclick="loadMuteList();">Load Mute-List</button></div>
+            <div class="col" id="lbl_mute_list_title" style="display: none;">
+                <h2 class="text-left">Muted Accounts/Posts</h2>
+            </div>
+        </div>
+        <div class="row d-xl-flex justify-content-xl-center" id="muted-accounts-container" style="display: none;"></div>
+        <hr>
+        <div class="row d-xl-flex justify-content-xl-center" id="muted-posts-container" style="display: none;"></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

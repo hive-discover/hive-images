@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -26,20 +26,8 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" href="#page-top"><img src="assets/img/HiveDiscoverLogo-IconOnly.png" style="width: 50px;">&nbsp;Hive Discover - Images</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav d-xl-flex ml-auto align-items-xl-center">
-                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#wishlist">Wishlist&nbsp;<i class="fas fa-star"></i></a></li>
-                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About&nbsp;<i class="fa fa-info"></i></a></li>
-                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#upload-your-images">Upload&nbsp;<i class="fa fa-user-plus"></i></a></li>
-                    <li class="nav-item d-xl-flex align-items-xl-center mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#usage-modal" data-target="#usage-modal" data-toggle="modal">Usage&nbsp;<i class="icon ion-social-buffer"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div style="padding-bottom: 202px;background: rgb(24,188,156);"></div>
+<body>
+    <div style="position: fixed;right: 0;z-index: 10;"><button class="btn btn-dark btn-lg text-primary" id="btn-close-iframe" type="button" style="margin-top: 15px;margin-right: 15px;"><i class="fa fa-close"></i><br></button></div>
     <header class="text-center text-white bg-primary masthead" style="padding-top: 0;background: rgb(24, 188, 156);padding-bottom: 25px;">
         <div class="container d-xl-flex flex-fill justify-content-center align-content-center align-self-center justify-content-xl-center" id="container-search-inputs" style="height: auto;min-height: 75vh;padding: 25px;">
             <div class="row align-items-center">
@@ -123,142 +111,6 @@
             </div><button class="btn btn-primary btn-lg text-center" id="btn-load-more-images" type="button" style="width: 100%;display: none;">Load more Images</button>
         </div>
     </section>
-    <section id="wishlist" class="team-boxed">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Wishlist</h2>
-                <p class="text-center">At the moment, these topics are in demand. So try if you have or can <br>take pictures and upload them! If you have your own request, please <br>contact us via our <a href="https://discord.gg/bt2pMaRa" target="_blank">Discord Channel</a>.<br></p>
-            </div>
-            <div class="row d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center align-items-xl-center people" id="wish-items">
-                <div class="col-md-6 col-lg-4 item" style="/*display: none;*/">
-                    <div class="box">
-                        <h3 class="name"><i class="fa fa-th"></i>&nbsp;Daily Activities</h3>
-                        <p class="title" style="display: none;">Request by @author?</p>
-                        <p class="name"><strong>Cooking, cleaning, brushing teeth and lunch - all the pictures that show daily life are great!</strong><br></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item" style="/*display: none;*/">
-                    <div class="box">
-                        <h3 class="name"><i class="fa fa-user"></i><strong>&nbsp;Human beings</strong></h3>
-                        <p class="title" style="display: none;">Request by @author?</p>
-                        <p class="name"><strong>Pictures with characters doing an activity or presenting something are always welcome!</strong><br></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item" style="/*display: none;*/">
-                    <div class="box">
-                        <h3 class="name"><i class="fa fa-heart"></i><strong>&nbsp;Emotions</strong><br></h3>
-                        <p class="title" style="display: none;">Request by @author?</p>
-                        <p class="name"><strong>Whether happy, sad, excited, angry - pictures with emotions or mood are always in demand!</strong><br></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="text-white bg-primary mb-0" id="about">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white">About the Project</h2>
-            <hr class="star-light mb-5">
-            <div class="row text-left">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">Every day on Hive authors are using stock images. I use them on occasion myself and when I add that source link as a thank you to the creator of that <br>image on the free stock photo sites I wish I could give them a percentage beneficiary from that post. Except they probably don't have an account on Hive, so I can't.<br></p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">Yet Hive has lots of talented artists and photographers. What if they<br>wanted to offer some of their work up for use by other Hivers for the&nbsp;<br>chance of a return of a percentage beneficiary every time someone used&nbsp;<br>that picture? We could then be supporting our own content creators and&nbsp;giving these artists an ongoing income stream for their efforts.<br></p>
-                </div>
-            </div><a class="btn btn-info btn-lg text-center d-xl-flex justify-content-xl-center align-items-xl-center text-center" role="button" target="_blank" href="https://peakd.com/c/hive-118554/created" style="margin-top: 15px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
-                    <path d="M14 13.9633H16V7.96331H10V9.96331H12.5858L7.25623 15.2929L8.67044 16.7071L14 11.3775V13.9633Z" fill="currentColor"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23 19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19ZM19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21Z" fill="currentColor"></path>
-                </svg>&nbsp;Explore our Stock Image Community</a>
-        </div>
-    </section>
-    <hr>
-    <section id="team" class="team-boxed">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">The Team </h2>
-                <p class="text-center" style="display: none;">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
-            </div>
-            <div class="row d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center align-items-xl-center people">
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/minismallholding/avatar" loading="auto">
-                        <h3 class="name">@<strong>minismallholding</strong></h3>
-                        <p class="title">Community admin</p>
-                        <hr>
-                        <div class="social"><a href="https://peakd.com/@minismallholding" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/christopher2002/avatar" loading="auto">
-                        <h3 class="name">@christopher2002</h3>
-                        <p class="title">Backend Developer</p>
-                        <hr>
-                        <div class="social"><a href="https://peakd.com/@christopher2002" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a><a href="https://github.com/Christopher-06" target="_blank"><i class="fa fa-github"></i></a></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/crosheille/avatar" loading="auto">
-                        <h3 class="name">@<strong>crosheille</strong></h3>
-                        <p class="title"><strong>COMMUNITY ADMIN</strong><br></p>
-                        <hr>
-                        <div class="social"><a href="https://peakd.com/@crosheille" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/kattycrochet/avatar" loading="auto">
-                        <h3 class="name">@kattycrochet</h3>
-                        <p class="title">Community MOD</p>
-                        <hr>
-                        <div class="social"><a href="https://peakd.com/@kattycrochet" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="https://images.hive.blog/u/action-chain/avatar" loading="auto">
-                        <h3 class="name">@action-chain</h3>
-                        <p class="title">System Admin</p>
-                        <hr>
-                        <div class="social"><a href="https://peakd.com/@action-chain" target="_blank"><img src="assets/img/logo_transparent@4x.png" style="width: 33px;"></a><a href="https://github.com/hive-discover/" target="_blank"><i class="fa fa-github"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="text-white bg-primary mb-0" id="upload-your-images" style="padding-top: 110px;padding-bottom: 120px;">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white">Upload your own images</h2>
-            <hr class="star-light mb-5">
-            <h4 class="text-center" style="padding-bottom: 30px;">Everyone can and should be able to upload their own stock images. Therefore, this process is also very simple</h4>
-            <div class="row" style="padding-top: 5px;">
-                <div class="col text-justify col-6 col-md-4">
-                    <h5 class="text-center" style="padding-bottom: 5px;"><i class="material-icons" style="padding-bottom: 5px;">add_a_photo</i>&nbsp;Take your Shot</h5>
-                    <p class="text-center d-xl-flex justify-content-xl-center align-items-xl-center" style="padding-bottom: 5px;">Take a picture of your environment, your life, an event or just draw something yourself. Preferably from different perspectives and rotations, so that there is the perfect picture for everyone.</p>
-                </div>
-                <div class="col text-justify col-6 col-md-4">
-                    <h5 class="text-center" style="padding-bottom: 5px;"><i class="fas fa-pen-fancy"></i>&nbsp;Write about your Photos</h5>
-                    <p class="text-center">Then write something about your pictures: What can you see? Where were the pictures taken? What is it? Meanwhile, mark important words (so-called keywords) with a '#' so that we can find the content!<br></p>
-                </div>
-                <div class="col text-justify col-12 col-md-4">
-                    <h5 class="text-center" style="padding-bottom: 5px;"><i class="fas fa-share-square"></i>&nbsp;Publish your Post</h5>
-                    <p class="text-center">Take your favourite front-end and post the post with your beautiful images in the community "Stock Images" or tag it with "#hivestockimages".<br></p>
-                    <div class="row d-xl-flex justify-content-xl-center">
-                        <div class="col text-center col-md-4"><a class="text-center text-secondary" href="https://peakd.com" style="width: 100%;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-point">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="12" cy="12" r="4"></circle>
-                                </svg>&nbsp;Peakd</a></div>
-                        <div class="col text-center col-md-4"><a class="text-center text-secondary" href="https://hive.blog/" style="width: 100%;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-point">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="12" cy="12" r="4"></circle>
-                                </svg>&nbsp;Hive.blog</a></div>
-                        <div class="col text-center col-md-4"><a class="text-center text-secondary" href="https://ecency.com/" style="width: 100%;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-point">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="12" cy="12" r="4"></circle>
-                                </svg>Ecency</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer class="text-center footer">
         <div class="container">
             <div class="row d-xl-flex justify-content-xl-center">
@@ -282,37 +134,6 @@
     <div class="text-center text-white copyright py-4">
         <div class="container"><small>Something not working? - Check out our Status-Page&nbsp;<a href="https://status.hive-discover.tech/status" target="_blank">here</a>&nbsp;</small>
             <hr><small>Copyright ©&nbsp;Hive Discover 2022 -&nbsp;<a href="#modal-impressum" data-toggle="modal" data-target="#modal-impressum">Impressum</a></small>
-        </div>
-    </div>
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center text-white d-block js-scroll-trigger rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="usage-modal" style="background: var(--gray);overflow-x: hidden;overflow-y: hidden;">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="text-center modal-title"><i class="icon ion-social-buffer"></i><strong>&nbsp;Who uses my pictures?</strong></h1><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="modal-body" style="overflow-x: hidden;">
-                    <div class="container text-center">
-                        <div class="row col-md-12" style="background: var(--teal);border-radius: 18px;margin: auto;">
-                            <div class="col col-md-1" style="padding: 0;">
-                                <h1 style="width: 100%;height: 100%;max-height: 100%;">@</h1>
-                            </div>
-                            <div class="col col-md-9" style="padding: 0;"><input class="form-control-lg col-md-12" type="text" id="txt_usage_username" placeholder="Username" style="padding: 0;max-width: 100%;max-height: 100%;height: 100%;background: rgba(255,255,255,0);border-width: 0px;"></div>
-                            <div class="col d-xl-flex justify-content-xl-center align-items-xl-center col-md-2"><button class="btn btn-primary btn-lg" id="btn-search-usage" type="button" style="width: 100%;background: rgba(0,0,0,0.06);border-width: 6px;color: rgb(0,0,0);"><i class="fa fa-search"></i>&nbsp;Search</button></div>
-                        </div>
-                        <hr class="star-dark mb-5">
-                        <div class="row" id="usage-nothing-was-found">
-                            <div class="col-lg-8 mx-auto">
-                                <h1>Nothing was found</h1>
-                            </div>
-                        </div>
-                        <div class="row" id="container-usage-posts"></div>
-                        <div id="usage-loader" class="sf_H sf_blend sf_grid" style="display: none;">
-                            <p class="sf_bar" style="height: 33px;margin-top: 20px;"></p>
-                        </div><button class="btn btn-primary" id="btn-usage-load-more" type="button" style="width: 80%;display: none;" onclick="showSomeUsagePosts()">Load more</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="image-modal" style="background: var(--gray);overflow-x: auto;overflow-y: hidden;">

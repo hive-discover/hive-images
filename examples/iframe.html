@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IFrame Example</title>
+	</head>
+	<body>
+
+		<iframe src="https://images.hive-discover.tech/iframe.html" width="1250" height="550" style="margin:auto;display:block"></iframe>
+
+		<script type="text/javascript">
+			// Add message-receive event to the window (cross-browser support)
+			var eventMethod = window.addEventListener ? "addEventListener": "attachEvent";
+			var eventer = window[eventMethod];
+			var messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
+
+			// Listen to message from window
+			eventer(messageEvent, function (e) {
+				
+				// Security check: make sure that the message is from our domain else return
+				if (e.origin !== 'https://images.hive-discover.tech') return;
+				
+				// Then get and parse data
+				const data = JSON.parse(e.data);
+				console.log(data);
+
+				// Event, when the close button is clicked (top right corner)
+				if(data.msg === 'close-iframe'){
+					/*
+						data= {
+							msg: 'close-iframe'
+						}
+					*/
+					// Close the iframe...
+					alert("Close Iframe!");
+				}
+
+				// Event, when a User wants to use an image
+				if(data.msg === 'image-choosen'){
+					/* 
+						data = {
+							msg : 'image-choosen',
+							author (username of the contributor), 
+							permlink (link to the original image), 
+							selected (img-url), 
+							licence (TODO: Licence Name), 
+							price (TODO: beneficiary percentage; value from 0-1), 
+							credit_name (TODO: how to mention the contributor)
+						}
+					*/
+					// Embed the image and credit-name in the written post...
+					// Add beneficiary for the contributor...
+					// Close the iframe...
+					alert("Choosed Image: " + data.selected);
+				}		
+			});
+		</script>
+	</body>
+</html>

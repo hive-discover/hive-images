@@ -1,0 +1,20 @@
+.layered-waves {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave-1 {
+  background-image: url("../../assets/img/layered-waves-turk2white.svg");
+}
+
+.layered-wave.wave-1 {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
